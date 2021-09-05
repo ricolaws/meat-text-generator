@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import axios from "axios";
+import Output from "./Components/Output";
 
 class App extends Component {
   constructor(props) {
@@ -33,26 +34,12 @@ class App extends Component {
       });
   }
 
-  // getSampleText() {
-  //   axios
-  //     .get(
-  //       "http://hipsterjesus.com/api?paras=" +
-  //         this.state.paras +
-  //         "&html=" +
-  //         this.state.html
-  //     )
-  //     .then((response) => {
-  //       this.setState({ text: response.data.text }, function () {
-  //         console.log(this.state);
-  //       });
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
-  // }
-
   render() {
-    return <div className="App">hello hello</div>;
+    return (
+      <div className="App">
+        <Output text={this.state.text} />
+      </div>
+    );
   }
 }
 
