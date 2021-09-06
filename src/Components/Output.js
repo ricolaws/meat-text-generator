@@ -4,19 +4,13 @@ class Output extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: props.text,
+      value: props.value,
     };
   }
 
   render() {
-    console.log(this.state.value);
-    return (
-      <div className="output">
-        {this.state.value.map((p) => (
-          <p>{p}</p>
-        ))}
-      </div>
-    );
+    const bacon = Array.from(this.props.value).map((p) => <p key={p}>{p}</p>);
+    return <div className="output">{bacon}</div>;
   }
 }
 
