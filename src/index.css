@@ -21,6 +21,7 @@ body {
 h1 {
   font-family: "Cormorant SC", serif;
   font-size: 4rem;
+  letter-spacing: 1.2rem;
   font-weight: 600;
   color: white;
 }
@@ -28,17 +29,28 @@ h1 {
 .output {
   padding-left: 4rem;
   padding-right: 4rem;
-  font-size: 1rem;
+  padding-bottom: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 p {
   background: white;
   padding: 1.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 3px 3px 1px springgreen;
+
+  font-size: 0.85rem;
   outline: 1px solid rgb(247, 97, 147);
+  background: linear-gradient(to right, rgba(233, 236, 193, 0.9), white);
+  justify-self: center;
 }
 
+hr {
+  height: 3px;
+  background: linear-gradient(to right, rgba(233, 236, 193, 0.9), white);
+  /* border: 3px dashed springgreen; */
+  border-top: 1px springgreen;
+}
 .form {
   width: 60%;
   height: 4rem;
@@ -74,7 +86,11 @@ select {
   display: block;
   font-family: "Kaisei HarunoUmi", serif;
   text-align: center;
-  border-bottom: 2px solid rgba(0, 0, 0, 1);
+  color: #463336;
+  border-bottom: 2px solid #463336;
+  border-top: 1px solid rgb(247, 97, 147);
+  border-left: 1px solid rgb(247, 97, 147);
+  border-right: 1px solid #463336;
 }
 
 input:focus,
@@ -95,11 +111,10 @@ select:active {
   height: 200px;
   position: fixed;
   bottom: 0vh;
-  right: -80vh;
-  display: flex;
-  justify-content: center;
+  right: -90vh;
+  transition: all 2.2s ease-in-out;
 }
 
-/* .pig {
-  width: 20%;
-} */
+.pig-pen:hover {
+  right: 20vh;
+}
