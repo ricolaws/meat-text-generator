@@ -43,9 +43,9 @@ This project also features a cute pig that runs away when your cursor lands on i
 
 ## Features
 
- - The cards are three dimensional objects that flip over when you click on them. 
- - The cat delivers the game instructions with a "typewriter" effect inspired by old video games.
- - It looks cute.
+ - Call the Bacon Ipsum API to get random text
+ - choose the number of paragraphs and the site will create and remove elements from the page.
+ - an animated pig.
 
 ## Install
 
