@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://practical-carson-06e218.netlify.app">
+    <a href="https://boring-bhabha-4ab64b.netlify.app">
       Demo
     </a>
   </h3>
@@ -19,7 +19,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [How to Play](#how-to-play)
+- [Install](#install)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -37,6 +37,7 @@ This project also features a cute pig that runs away when your cursor lands on i
 ### Built With
 
 - JAVASCRIPT
+- REACT
 - CSS
 - HTML
 
@@ -46,9 +47,9 @@ This project also features a cute pig that runs away when your cursor lands on i
  - The cat delivers the game instructions with a "typewriter" effect inspired by old video games.
  - It looks cute.
 
-## How to Install
+## Install
 
-Download the repository, run npm install to get the node modules, and npm start to run the site.
+Download the repository, run the command "npm install" in the base directory to get the node modules, and "npm start" to run the site.
 
 ## Contact
 
